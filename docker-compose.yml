@@ -1,0 +1,82 @@
+services:
+    actixweb:
+        build:
+            context: ./actixweb
+        image: compare_actixweb
+        container_name: actixweb
+        networks:
+            - compare_performance_network
+
+    axum:
+        build:
+            context: ./axum
+        image: compare_axum
+        container_name: axum
+        networks:
+            - compare_performance_network
+
+    caddy:
+        image: caddy:2.6.4
+        container_name: caddy
+        ports:
+            - 80:80
+            - 443:443
+        volumes:
+            - ./caddy/Caddyfile:/etc/caddy/Caddyfile
+        command: ["caddy", "run", "--config", "/etc/caddy/Caddyfile"]
+        networks:
+            - compare_performance_network
+
+    echo:
+        build:
+            context: ./echo
+        image: compare_echo
+        container_name: echo
+        networks:
+            - compare_performance_network
+
+    flask:
+        build:
+            context: ./flask
+        image: compare_flask
+        container_name: flask
+        networks:
+            - compare_performance_network
+
+    k6:
+        image: loadimpact/k6
+        container_name: k6
+        entrypoint: [ "/bin/sh", "-c", "sleep 10 && k6 run /tests/batch.js" ]
+        volumes:
+            - ./k6/tests:/tests
+        depends_on:
+            - caddy
+        networks:
+            - compare_performance_network
+
+    koa:
+        build:
+            context: koa
+        image: compare_koa
+        container_name: koa
+        networks:
+            - compare_performance_network
+
+    nest:
+        build:
+            context: nest
+        image: compare_nest
+        container_name: nest
+        networks:
+            - compare_performance_network
+
+    slim:
+        build:
+            context: ./slim
+        image: compare_slim
+        container_name: slim
+        networks:
+            - compare_performance_network
+
+networks:
+    compare_performance_network:
