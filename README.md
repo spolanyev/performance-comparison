@@ -17,6 +17,8 @@ Each of them has an endpoint that, when visited, requests weather data from the 
 
 ![Containers](https://github.com/spolanyev/performance-comparison/blob/main/containers.png?raw=true)
 
+![Top](https://github.com/spolanyev/performance-comparison/blob/main/top-3.png?raw=true)
+
 # Contacts
 
 If you are hiring, feel free to contact me at [spolanyev@gmail.com](mailto:spolanyev@gmail.com?subject=Vacancy).
