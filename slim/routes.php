@@ -1,5 +1,6 @@
 <?php
 
+//@author Stanislav Polaniev <spolanyev@gmail.com>
 use App\ExportedWeather;
 use App\ImportedWeather;
 use Psr\Http\Client\ClientInterface;
