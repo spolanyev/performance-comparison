@@ -16,7 +16,7 @@ For testing, I used the Caddy server located on the same Docker network and Graf
 
 To monitor CPU and memory usage of Docker containers for the top 3 frameworks, I used cAdvisor, Prometheus, and Grafana.
 
-For the AWS test, I used the [Wildix](https://www.wildix.com/) R&D playground. The lambdas had 128MB of memory.
+For the AWS test, I used the [Wildix](https://www.wildix.com/)'s R&D playground. The lambdas had 128 and 512 MB of memory.
 
 ![Response Time](https://github.com/spolanyev/performance-comparison/blob/main/k6-summary.png?raw=true)
 
@@ -35,6 +35,10 @@ For the AWS test, I used the [Wildix](https://www.wildix.com/) R&D playground. T
 ![Lambda 128 Response Time](https://github.com/spolanyev/performance-comparison/blob/main/k6-lambda-128mb-summary.png?raw=true)
 
 ![Lambda 128 Metrics](https://github.com/spolanyev/performance-comparison/blob/main/cloudwatch-lambda-128mb.png?raw=true)
+
+![Lambda 512 Response Time](https://github.com/spolanyev/performance-comparison/blob/main/k6-lambda-512mb-summary.png?raw=true)
+
+![Lambda 512 Metrics](https://github.com/spolanyev/performance-comparison/blob/main/cloudwatch-lambda-512mb.png?raw=true)
 
 # Contacts
 
