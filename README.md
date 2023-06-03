@@ -40,6 +40,10 @@ For the AWS test, I used the [Wildix](https://www.wildix.com/)'s R&D playground.
 
 ![Lambda 512 Metrics](https://github.com/spolanyev/performance-comparison/blob/main/cloudwatch-lambda-512mb.png?raw=true)
 
+![Lambda 128 Compiled Response Time](https://github.com/spolanyev/performance-comparison/blob/main/k6-lambda-128mb-compiled.png?raw=true)
+
+![Lambda 128 Compiled Metrics](https://github.com/spolanyev/performance-comparison/blob/main/cloudwatch-lambda-128mb-compiled.png?raw=true)
+
 # Contacts
 
 If you are hiring, feel free to contact me at [spolanyev@gmail.com](mailto:spolanyev@gmail.com?subject=Vacancy).
