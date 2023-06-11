@@ -7,7 +7,7 @@ I compared the performance of the web frameworks:
 * Python FastAPI;
 * Python Flask;
 * JavaScript Koa;
-* JavaScript Nest;
+* TypeScript Nest;
 * PHP Slim.
 
 Each web service has an endpoint. When the endpoint is visited, it requests weather data from the server and returns the value.
@@ -43,6 +43,10 @@ For the AWS test, I used the [Wildix](https://www.wildix.com/)'s R&D playground.
 ![Lambda 128 Compiled Response Time](https://github.com/spolanyev/performance-comparison/blob/main/k6-lambda-128mb-compiled.png?raw=true)
 
 ![Lambda 128 Compiled Metrics](https://github.com/spolanyev/performance-comparison/blob/main/cloudwatch-lambda-128mb-compiled.png?raw=true)
+
+![Lambda 128 K6 Total Duration](https://github.com/spolanyev/performance-comparison/blob/main/k6-lambda-128mb-total-duration.png?raw=true)
+
+![Lambda 128 CloudWatch Metrics](https://github.com/spolanyev/performance-comparison/blob/main/cloudwatch-lambda-128mb-total-duration.png?raw=true)
 
 # Contacts
 
