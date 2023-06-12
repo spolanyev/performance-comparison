@@ -1,6 +1,6 @@
 # About
 
-I compared the performance of the web frameworks:
+I compared the performance of these web frameworks:
 * Rust Actix Web;
 * Rust Axum;
 * Go Echo;
@@ -10,13 +10,17 @@ I compared the performance of the web frameworks:
 * TypeScript Nest;
 * PHP Slim.
 
-Each web service has an endpoint. When the endpoint is visited, it requests weather data from the server and returns the value.
+A web service with an endpoint is built on top of each framework. When the endpoint is visited, the service requests weather data from a weather server and returns the value.
 
-For testing, I used the Caddy server located on the same Docker network and Grafana K6 load testing tool.
+For testing, I use a local page as the weather service. In the Docker it is located on a Caddy server in the same network.
 
-To monitor CPU and memory usage of Docker containers for the top 3 frameworks, I used cAdvisor, Prometheus, and Grafana.
+I use Grafana K6 load testing tool.
 
-For the AWS test, I used the [Wildix](https://www.wildix.com/)'s R&D playground. The lambdas had 128 and 512 MB of memory.
+To monitor CPU and memory usage of Docker containers, I use cAdvisor, Prometheus, and Grafana.
+
+For testing on AWS, I use an R&D playground from the company [Wildix](https://www.wildix.com/).
+
+### 8 Frameworks
 
 ![Response Time](https://github.com/spolanyev/performance-comparison/blob/main/k6-summary.png?raw=true)
 
@@ -26,23 +30,15 @@ For the AWS test, I used the [Wildix](https://www.wildix.com/)'s R&D playground.
 
 ![Containers](https://github.com/spolanyev/performance-comparison/blob/main/containers.png?raw=true)
 
+### Top 3 Frameworks
+
 ![Top 3 Response Time](https://github.com/spolanyev/performance-comparison/blob/main/k6-summary-top-3.png?raw=true)
 
 ![Top 3 CPU Consumption](https://github.com/spolanyev/performance-comparison/blob/main/grafana-docker-cpu-top-3.png?raw=true)
 
 ![Top 3 Memoru Consumption](https://github.com/spolanyev/performance-comparison/blob/main/grafana-docker-memory-top-3.png?raw=true)
 
-![Lambda 128 Response Time](https://github.com/spolanyev/performance-comparison/blob/main/k6-lambda-128mb-summary.png?raw=true)
-
-![Lambda 128 Metrics](https://github.com/spolanyev/performance-comparison/blob/main/cloudwatch-lambda-128mb.png?raw=true)
-
-![Lambda 512 Response Time](https://github.com/spolanyev/performance-comparison/blob/main/k6-lambda-512mb-summary.png?raw=true)
-
-![Lambda 512 Metrics](https://github.com/spolanyev/performance-comparison/blob/main/cloudwatch-lambda-512mb.png?raw=true)
-
-![Lambda 128 Compiled Response Time](https://github.com/spolanyev/performance-comparison/blob/main/k6-lambda-128mb-compiled.png?raw=true)
-
-![Lambda 128 Compiled Metrics](https://github.com/spolanyev/performance-comparison/blob/main/cloudwatch-lambda-128mb-compiled.png?raw=true)
+### AWS Lambda
 
 ![Lambda 128 K6 Total Duration](https://github.com/spolanyev/performance-comparison/blob/main/k6-lambda-128mb-total-duration.png?raw=true)
 
