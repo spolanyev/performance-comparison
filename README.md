@@ -44,6 +44,13 @@ For testing on AWS, I use an R&D playground from the company [Wildix](https://ww
 
 ![Lambda 128 CloudWatch Metrics](https://github.com/spolanyev/performance-comparison/blob/main/cloudwatch-lambda-128mb-total-duration.png?raw=true)
 
+#### Lambda Cold Start
+
+![Lambda 128 K6 Cold Start](https://github.com/spolanyev/performance-comparison/blob/main/k6-lambda-128mb-cold-start.png?raw=true)
+
+![Lambda 128 CloudWatch Cold Start](https://github.com/spolanyev/performance-comparison/blob/main/cloudwatch-lambda-128mb-cold-start.png?raw=true)
+
+
 # Contacts
 
 If you are hiring, feel free to contact me at [spolanyev@gmail.com](mailto:spolanyev@gmail.com?subject=Vacancy).
