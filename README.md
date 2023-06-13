@@ -20,7 +20,7 @@ To monitor CPU and memory usage of Docker containers, I use cAdvisor, Prometheus
 
 For testing on AWS, I use an R&D playground from the company [Wildix](https://www.wildix.com/).
 
-### 8 Frameworks
+#### 8 Frameworks
 
 ![Response Time](https://github.com/spolanyev/performance-comparison/blob/main/k6-summary.png?raw=true)
 
@@ -30,7 +30,7 @@ For testing on AWS, I use an R&D playground from the company [Wildix](https://ww
 
 ![Containers](https://github.com/spolanyev/performance-comparison/blob/main/containers.png?raw=true)
 
-### Top 3 Frameworks
+#### Top 3 Frameworks
 
 ![Top 3 Response Time](https://github.com/spolanyev/performance-comparison/blob/main/k6-summary-top-3.png?raw=true)
 
@@ -38,7 +38,7 @@ For testing on AWS, I use an R&D playground from the company [Wildix](https://ww
 
 ![Top 3 Memoru Consumption](https://github.com/spolanyev/performance-comparison/blob/main/grafana-docker-memory-top-3.png?raw=true)
 
-### AWS Lambda
+#### AWS Lambda
 
 ![Lambda 128 K6 Total Duration](https://github.com/spolanyev/performance-comparison/blob/main/k6-lambda-128mb-total-duration.png?raw=true)
 
