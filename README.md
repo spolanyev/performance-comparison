@@ -50,6 +50,12 @@ For testing on AWS, I use an R&D playground from the company [Wildix](https://ww
 
 ![Lambda 128 CloudWatch Cold Start](https://github.com/spolanyev/performance-comparison/blob/main/cloudwatch-lambda-128mb-cold-start.png?raw=true)
 
+#### Lambda Warm Start
+
+![Lambda 128 K6 Warm Start](https://github.com/spolanyev/performance-comparison/blob/main/k6-lambda-128mb-warm-start.png?raw=true)
+
+![Lambda 128 CloudWatch Warm Start](https://github.com/spolanyev/performance-comparison/blob/main/cloudwatch-lambda-128mb-warm-start.png?raw=true)
+
 
 # Contacts
 
