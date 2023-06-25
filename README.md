@@ -57,6 +57,12 @@ For testing on AWS, I use an R&D playground from the company [Wildix](https://ww
 ![Lambda 128 CloudWatch Warm Start](https://github.com/spolanyev/performance-comparison/blob/main/cloudwatch-lambda-128mb-warm-start.png?raw=true)
 
 
+#### Amazon ECS on Fargate
+
+![Fargate ECS K6](https://github.com/spolanyev/performance-comparison/blob/main/k6-fargate-ecs-duration.png?raw=true)
+
+![Fargate ECS CloudWatch](https://github.com/spolanyev/performance-comparison/blob/main/cloudwatch-fargate-ecs.png?raw=true)
+
 # Contacts
 
 If you are hiring, feel free to contact me at [spolanyev@gmail.com](mailto:spolanyev@gmail.com?subject=Vacancy).
