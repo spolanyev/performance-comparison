@@ -1,18 +1,18 @@
 # About
 
 I compared the performance of these web frameworks:
-* Rust Actix Web;
-* Rust Axum;
 * Go Echo;
+* JavaScript Koa;
+* PHP Slim.
 * Python FastAPI;
 * Python Flask;
-* JavaScript Koa;
+* Rust Actix Web;
+* Rust Axum;
 * TypeScript Nest;
-* PHP Slim.
 
 A web service with an endpoint is built on top of each framework. When the endpoint is visited, the service requests weather data from a weather server and returns the value.
 
-For testing, I use a local page as the weather service. In the Docker it is located on a Caddy server in the same network.
+For testing, I use a Caddy server on the same Docker network as a weather service.
 
 I use Grafana K6 load testing tool.
 
@@ -65,4 +65,4 @@ For testing on AWS, I use an R&D playground from the company [Wildix](https://ww
 
 # Contacts
 
-If you are hiring, feel free to contact me at [spolanyev@gmail.com](mailto:spolanyev@gmail.com?subject=Vacancy).
+If you are hiring, feel free to contact me at [spolanyev@gmail.com](mailto:spolanyev@gmail.com?subject=Web%20Frameworks).
